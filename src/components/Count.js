@@ -1,4 +1,4 @@
-import React, {useState} from 'react';
+import React, {useState, Fragment} from 'react';
 
 const Count = () => {
 
@@ -6,7 +6,10 @@ const Count = () => {
     const [numero, setNumero] = useState(1); //Se pasa el nombre del estado: "Numero" y un odificador de ese numero: "setNumero"
 
     return ( 
-        <h2>First Component In React {numero}</h2>
+        <Fragment>
+            <h2>First Component In React {numero}</h2>
+            <button>Aumentar</button>
+        </Fragment>
      );
 }
  
