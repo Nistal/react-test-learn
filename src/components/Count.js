@@ -1,9 +1,9 @@
 import React, {useState, Fragment} from 'react';
 
-const Count = () => {
+const Contador = () => {
 
     //Se inicializa la constante con el use state
-    const [numero, setNumero] = useState(1); //Se pasa el nombre del estado: "Numero" y un odificador de ese numero: "setNumero"
+    const [numero, setNumero] = useState(0); //Se pasa el nombre del estado: "Numero" y un odificador de ese numero: "setNumero"
 
     return ( 
         <Fragment>
@@ -13,4 +13,4 @@ const Count = () => {
      );
 }
  
-export default Count;
+export default Contador;
